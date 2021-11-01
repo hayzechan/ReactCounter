@@ -10,10 +10,10 @@ function CounterSizeGenerator(props){
         props.updateCounterSize(size);
     }
     return(
-        <div className="counter">
+        <div>
             <span>Size</span>
             <input min = "0" type = "number" value={size} onChange={handleChangeSize}></input>
-            <button onClick={generateCounter}>Generate</button>
+            <button onClick={generateCounter} style={{color: "red"}}>Generate</button>
         </div>
     );
 }

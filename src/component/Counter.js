@@ -11,9 +11,8 @@ function decrease(){
     setNumber(number-1);
     props.decreaseSum();
 }
-
 return(
-<div className="counter">
+<div>
     <button onClick={increase}>+</button>
     <span>{number}</span>
     <button onClick={decrease}>-</button>
