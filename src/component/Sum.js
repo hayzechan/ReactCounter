@@ -1,10 +1,17 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
-function Sum(props){
+// function store(sum){
+    
+// }
 
+function Sum(){
+const sum = useSelector(state => state.sum);
     return(
         <div>
-            Sum: {props.sum};
+            <span>
+                Sum: {sum}
+            </span>
         </div>
     )
 }
